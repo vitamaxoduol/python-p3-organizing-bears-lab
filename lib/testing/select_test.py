@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 
-import sqlite3
+# import sqlite3
+# from lib.sql_queries import sql_queries
 
-from sql_queries import (
+from lib.sql_queries import (
     select_all_female_bears_return_name_and_age,
     select_all_bears_names_and_orders_in_alphabetical_order,
     select_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest,
     select_oldest_bear_and_returns_name_and_age,
     select_youngest_bear_and_returns_name_and_age,
 )
-
+import sqlite3
 connection = sqlite3.connect(":memory:")
 
 cursor = connection.cursor()
